@@ -341,7 +341,7 @@ define SAMPLE_MAKEFILE_INC_CONTENTS
 
 # The name of the library.
 # Defaults to LIBNAME, where libLIBNAME is the directory.
-LIBRARY_NAME = $(patsubst lib%%,%%,$(notdir $(CURDIR)))
+LIBRARY_NAME = $(patsubst lib%,%,$(notdir $(CURDIR)))
 
 # The flag that will be passed to the include the library in
 # executables.
